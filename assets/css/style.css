@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.col-6 {
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-12 {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.hight {
+    height: 100vh;
+}
+
+nav {
+    padding-top: 20px;
+}
+
+h2 {
+    font-size: 42px;
+    line-height: 52px;
+    font-family: "dm sans";
+    color: #1E0E62;
+}
+
+p {
+    font-size: 18px;
+    color: rgba(21, 20, 57, 0.4);
+    width: 275px;
+}
+
+.input-t-b {
+    border: 2px solid #EBEAED;
+    width: 470px;
+    height: 60px;
+    border-radius: 100px;
+}
+
+.border {
+    width: 1170px;
+    height: 40px;
+}
+
+.padding-l {
+    padding-left: 24px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-item {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.ma-r {
+    margin-right: 20px;
+}
+
+.ma-l {
+    margin-right: 20px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.pt-top {
+    padding: 109px;
+}
+
+.margin {
+    margin-top: 60px;
+}
+
+.padding-t {
+    padding-top: 50px;
+}
+
+.mb {
+    margin-bottom: 30px;
+}
+
+.p {
+    padding-top: 32px;
+}
+
+.bg-color {
+    background-color: #25DAC5;
+}
+
+.button-sign {
+    color: white;
+    Font-family: "dm Sans";
+    Font-style: Medium;
+    Font-size: 18px;
+    Line-height: 26px;
+    background-color: #25DAC5;
+    border-radius: 100px;
+    border: 1px #25DAC5;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.button-2 {
+    color: white;
+    Font-family: "dm Sans";
+    Font-style: Medium;
+    Font-size: 20px;
+    Line-height: 26px;
+}
+
+.h6 {
+    Font-family: "dm Sans";
+    Font-style: "Regular";
+    Font-size: 16px;
+    Line-height: 26px;
+    color: rgba(21, 20, 57, 0.4);
+    padding-left: 58px;
+    padding-top: 12px;
+
+}
+
+.input-text {
+    Font-family: "dm Sans";
+    Font-style: Medium;
+    Font-size: 20px;
+    Line-height: 26px;
+    color: rgba(21, 20, 57, 0.4);
+}
+
+.nav-text {
+    Font-family: "dm Sans";
+
+    Font-size: 18px;
+    Line-height: 26px;
+    color: #A1A1BD;
+
+}
+
+.startup-text {
+    Font-family: "dm Sans";
+    Font-style: "Bold";
+    Font-size: 24px;
+    Line-height: 31px;
+    color: #1E0E62;
+    padding-right: 24px;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.svg-box {
+    background-color: #EA3223;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+@media (min-width:992px) {
+    .col-md-6 {
+        width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .mb-md-0 {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:992px) {
+    .flex-d-col-r {
+        flex-direction: column-reverse;
+    }
+
+    .mb-sm-20 {
+        margin-bottom: 20px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .d-flex-justify-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .w-md-70 {
+        width: 70%;
+    }
+}
+
+@media (max-width:768px) {
+    label[for="menuIcon"] {
+        width: 35px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 3;
+        position: relative;
+    }
+
+    .f-c {
+        flex-direction: column;
+    }
+
+    label[for="menuIcon"]>span {
+        width: 100%;
+        height: 4px;
+        background-color: orangered;
+    }
+
+    .sm-screen {
+        position: fixed;
+        z-index: 2;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: yellow;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    input[type="checkbox"]:checked~.sm-screen {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .w-sm-100 {
+        width: 100%;
+    }
+}
